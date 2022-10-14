@@ -1,0 +1,44 @@
+Sun Sep 18 2022 15:20:25 GMT+0530 (India Standard Time) - SyntaxError: Unexpected token } in JSON at position 50
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+    at invokeCallback (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Sep 18 2022 15:21:21 GMT+0530 (India Standard Time) - SyntaxError: Unexpected token } in JSON at position 50
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+    at invokeCallback (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Sep 18 2022 15:21:53 GMT+0530 (India Standard Time) - SyntaxError: Unexpected token } in JSON at position 50
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+    at invokeCallback (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Sep 18 2022 15:22:11 GMT+0530 (India Standard Time) - SyntaxError: Unexpected token } in JSON at position 50
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\hp\Desktop\practice\noteBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+    at invokeCallback (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\hp\Desktop\practice\noteBackend\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
