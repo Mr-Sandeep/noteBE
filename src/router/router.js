@@ -7,7 +7,7 @@ const service = require('../service/service');
 const auth = require('../middleware/auth');
 const routing = express.Router();
 
-routing.get('/showDeploy', async (req, res, next)=>{
+routing.get('/', async (req, res, next)=>{
     try {
         res.send("<h1>It is working</h1>")
     } catch (err) {

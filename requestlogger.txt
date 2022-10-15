@@ -459,3 +459,8 @@ Fri Oct 14 2022 18:26:00 GMT+0530 (India Standard Time) - ::1 - /savedNotes
 Fri Oct 14 2022 18:26:02 GMT+0530 (India Standard Time) - ::1 - /getNotes
 Fri Oct 14 2022 18:26:04 GMT+0530 (India Standard Time) - ::1 - /deleteNote
 Fri Oct 14 2022 18:26:06 GMT+0530 (India Standard Time) - ::1 - /getNotes
+Sat Oct 15 2022 13:52:45 GMT+0530 (India Standard Time) - ::1 - /showDeploy
+Sat Oct 15 2022 13:52:45 GMT+0530 (India Standard Time) - ::1 - /favicon.ico
+Sat Oct 15 2022 13:52:58 GMT+0530 (India Standard Time) - ::1 - /showDeploy
+Sat Oct 15 2022 14:07:59 GMT+0530 (India Standard Time) - ::1 - /
+Sat Oct 15 2022 14:08:03 GMT+0530 (India Standard Time) - ::1 - /
