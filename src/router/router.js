@@ -7,6 +7,15 @@ const service = require('../service/service');
 const auth = require('../middleware/auth');
 const routing = express.Router();
 
+routing.get('/showDeploy', async (req, res, next)=>{
+    try {
+        res.send("<h1>It is working</h1>")
+    } catch (err) {
+        err.status = 500;
+        throw new Error("deploy error");
+    }
+});
+
 routing.post('/registerUser',[
     check('name', "Name is required").not().isEmpty(),
     check('email',"Email is required").not().isEmpty(),
