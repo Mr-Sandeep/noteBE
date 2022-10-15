@@ -14,4 +14,4 @@ app.use('/', router);
 app.use(errLogger);
 
 app.listen(PORT);
-console.log("Server started at 3000!");
+console.log("Server started at "+PORT);;
