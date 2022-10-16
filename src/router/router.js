@@ -64,7 +64,7 @@ routing.post('/registerUser',[
                 //     if(err) throw err;
                 //     res.json({token})
                 // })
-                res.setHeader('Access-Control-Allow-Origin', 'https://noteforyouapp.herokuapp.com/register');
+                res.setHeader('Access-Control-Allow-Origin', '*');
                 res.json({msg:"User registered successfully", status: "SUCCESS", data: []})
             }else{
                 res.status(500).json({msg: "User registration failed", status: "FAILED", data: []})
