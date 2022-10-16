@@ -7,7 +7,12 @@ const reqLogger = require('./src/utilities/requestLogger');
 const errLogger = require('./src/utilities/errorLogger');
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://noteforyouapp.herokuapp.com",
+        methods: ["GET", "POST", "PUT"]
+}
+));
 app.use(bodyParser.json());
 app.use(reqLogger);
 app.use('/', router);
