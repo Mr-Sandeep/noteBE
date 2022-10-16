@@ -9,6 +9,7 @@ const routing = express.Router();
 
 routing.get('/', async (req, res, next)=>{
     try {
+        console.log(req.method + " - " +req.url);
         res.send("<h1>It is working</h1>")
     } catch (err) {
         err.status = 500;
@@ -29,6 +30,7 @@ routing.post('/registerUser',[
         const {name, email, password} = req.body;
 
         try {
+            console.log(req.method + " - " +req.url);
             let existUser = await service.checkUserEmail(email);
             if(existUser){
                 return res.json({msg: "User already exist.", status:"FAILED", data: null})
@@ -86,6 +88,7 @@ routing.post('/login',[
     const {email, password} = req.body;
 
     try {
+        console.log(req.method + " - " +req.url);
         let checkUser = await service.checkUserEmail(email);
         if(!checkUser){
             return res.json({msg: 'Invalid credentials.', status:"FAILED", data: null});
@@ -117,6 +120,7 @@ routing.post('/login',[
 
 routing.get('/getNotes', auth,async (req, res, next)=>{
     try {
+        console.log(req.method + " - " +req.url);
         let getAllNotes = await service.getNotes(req.email);
         if(getAllNotes){
             res.json({msg: `Data retrived successfully`, status:"SUCCESS", data: getAllNotes})
@@ -141,6 +145,7 @@ routing.put('/savedNotes',[auth,
             return res.status(400).json({errors: errors.array()});
         }
     try {
+        console.log(req.method + " - " +req.url);
         let nTitle = req.body.noteTitle;
         let nDesc = req.body.noteDesc;
         let savedResp = service.saveNote(req.email,nTitle, nDesc);
@@ -162,6 +167,7 @@ routing.post('/deleteNote', [auth, check('noteTitle').not().isEmpty()], async (r
         res.json({errors: errors.array()});
     }
     try {
+        console.log(req.method + " - " +req.url);
         let title = req.body.noteTitle;
         // console.log(title);
         let deleteNote = await service.deleteNote(req.email, title);
@@ -184,6 +190,7 @@ routing.post('/editNote', [auth, check('noteTitle').not().isEmpty(),check('noteD
         res.json({errors: errors.array()});
     }
     try {
+        console.log(req.method + " - " +req.url);
         // console.log("request body ", req.body);
         let title = req.body.noteTitle;
         let desc = req.body.noteDesc;

@@ -71,7 +71,7 @@ serviceLayer.deleteNote = async (email, title) => {
         let deletion = await conn.updateOne(
             {"email":email},
             {$pull:{"notesArr": {"noteTitle": title}}});
-        console.log(deletion);
+        // console.log(deletion);
         return deletion;
     } catch (error) {
         console.error(error);
@@ -83,7 +83,7 @@ serviceLayer.deleteNote = async (email, title) => {
 
 serviceLayer.updateNote = async (email, title, desc, _id) => {
     try {
-        console.log(email, title, desc, _id);
+        // console.log(email, title, desc, _id);
         let conn = await dbConnection.connectDB();
         let updation = await conn.updateOne(
             {$and:[

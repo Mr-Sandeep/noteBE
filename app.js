@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors(
     {
-        origin: true
+        origin: ["https://noteforyouapp.herokuapp.com", "http://localhost:4200"],
+        methods: ["GET", "POST", "PUT", "OPTIONS"]
     }
     ));
 app.use(bodyParser.json());
