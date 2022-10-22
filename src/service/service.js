@@ -85,15 +85,9 @@ serviceLayer.updateNote = async (email, title, desc, _id) => {
     try {
         // console.log(email, title, desc, _id);
         let conn = await dbConnection.connectDB();
-        let updation = await conn.updateOne(
-            {$and:[
-                {"email":email},
-                {"notesArr._id":_id}
-            ]},
-            {$set:
-                {"notesArr":{"noteTitle": title, "noteDesc": desc}}
-            });
-        // console.log(updation);
+        const query = { "email": email, "notesArr._id": _id};
+        const updateDoc = {$set:{"notesArr.$.noteTitle":title, "notesArr.$.noteDesc": desc}};
+        let updation = await conn.updateOne(query, updateDoc);
         return updation;
     } catch (error) {
         console.error(error);
@@ -102,5 +96,5 @@ serviceLayer.updateNote = async (email, title, desc, _id) => {
        
     }
 }
-// serviceLayer.setupDB();
+serviceLayer.updateNote("sonisandeep@gmail.com", "updated testing", "updation this is testing", "6353f10ab4fbeae248d2a8c1");
 module.exports = serviceLayer;
